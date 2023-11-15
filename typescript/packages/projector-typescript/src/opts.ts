@@ -3,25 +3,26 @@ import type { CommandLineOptions } from 'command-line-args';
 
 export type Opts = CommandLineOptions & {
   args?: string[];
-  pwd?: string;
   config?: string;
+  pwd?: string;
 };
 
 export const getOpts = (): Opts => {
   return commandLineArgs([
     {
+      defaultOption: true,
+      multiple: true,
       name: 'args',
-      defaultValue: true,
       type: String,
     },
     {
-      name: 'config',
       alias: 'c',
+      name: 'config',
       type: String,
     },
     {
-      name: 'pwd',
       alias: 'p',
+      name: 'pwd',
       type: String,
     },
   ]);
