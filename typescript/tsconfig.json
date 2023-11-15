@@ -108,6 +108,7 @@
   },
   "ts-node": {
     // Tell ts-node CLI to install the --loader automatically, explained below
-    "esm": true
+    "esm": true,
+    "experimentalSpecifierResolution": "node" /* https://typestrong.org/ts-node/api/interfaces/CreateOptions.html#experimentalSpecifierResolution */
   }
 }
