@@ -1,0 +1,19 @@
+{
+  "name": "projector-typescript",
+  "version": "1.0.0",
+  "description": "cli app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --loader ts-node/esm ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "command-line-args": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/command-line-args": "^5.2.3"
+  }
+}
