@@ -1,11 +1,8 @@
 import commandLineArgs from 'command-line-args';
 import type { CommandLineOptions } from 'command-line-args';
+import type { Options } from './types';
 
-export type Opts = CommandLineOptions & {
-  args?: string[];
-  config?: string;
-  pwd?: string;
-};
+export type Opts = CommandLineOptions & Options;
 
 export const getOpts = (): Opts => {
   return commandLineArgs([
